@@ -6,12 +6,14 @@
 <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <?php
+ini_set('display_errors','On');
+error_reporting('E_ALL');
 	global $PHP_SELF,$name, $sec_name, $fam, $date, $city, $ok; 
 ?>
 <body>
 <form action="<?php echo $PHP_SELF ?>" method="GET">
 	<header >
-	    <h1>Лабораторная работа №3</h1>
+	    <h1>Лабораторная работа</h1>
 	</header>
   <p>Имя</p><input type="text" name="name" size="5" value="<?php echo $name ?>">
   <p>Фамилия</p><input type="text" name="sec_name" size="5" value="<?php echo $sec_name ?>">
@@ -30,6 +32,7 @@ foreach ($arr as $key => $value ) {
 	echo "<dt>$key:</dt>";
 	echo "<dd>$value</dd>";
 }
+ini_set('display_errors','Off');
 ?>
 </body>
 </html>

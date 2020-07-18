@@ -6,12 +6,14 @@
 <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <?php
+ini_set('display_errors','On');
+error_reporting('E_ALL');
   global $PHP_SELF,$a, $b, $c, $x, $ok,$s1, $s2, $j, $k, $y; 
 ?>
 <body>
 <form action="<?php echo $PHP_SELF ?>" method="GET">
   <header>
-      <h1>Лабораторная работа №2</h1>
+      <h1>Лабораторная работа</h1>
   </header>
   <p><strong>ПЕРВОЕ УРАВНЕНИЕ:</strong></p>
   <div id="div0">
@@ -38,6 +40,7 @@
   echo "y = ".$y;
   $s2=(abs(cos($y/pi()))*$_GET['j'])/exp(-sin(pi()/$_GET['k']));
   echo "<br/>f1 = ".$s2;
+  ini_set('display_errors','Off');
 ?>
 
 </form>

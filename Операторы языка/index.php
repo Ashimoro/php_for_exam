@@ -7,11 +7,13 @@
 </head>
 <body>
   <?php
+  ini_set('display_errors','On');
+  error_reporting('E_ALL');
   global $PHP_SELF,$a, $b, $c, $x, $ok, $s;
   ?>
 <form action="<?php echo $PHP_SELF ?>" method="GET">
   <header >
-      <h1>Лабораторная работа №1</h1>
+      <h1>Лабораторная работа</h1>
   </header>
 
   <input type="text" name="a" size="3" value="<?php echo $a ?>">
@@ -25,6 +27,7 @@
   //$s=$_GET['a']+$_GET['b'];
   $s=(($_GET['a']-$_GET['b'])/$_GET['x'])/($_GET['c']/$_GET['a']);
   echo "s = ".$s;
+  ini_set('display_errors','Off');
 ?>
 </body>
 </html>

@@ -6,12 +6,14 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <?php
+ini_set('display_errors','On');
+error_reporting('E_ALL');
 	global $PHP_SELF,$a, $b, $c, $x, $ok, $s;
 ?>
 <body>
 <form action="<?php echo $PHP_SELF ?>" method="GET">
   <header >
-      <h1>Лабораторная работа №5</h1>
+      <h1>Лабораторная работа</h1>
   </header>
    <p><select name="image"> 
     <option disabled selected>Выберите пункт</option> 
@@ -70,6 +72,7 @@ if ($_GET['image'] == @image5) {
 	$src = '5.jpg';
 	$images5 -> get();
 }
+ini_set('display_errors','Off');
 ?>
    <p>
    	<img src="<?php echo $src; ?>" width="200" height="200">

@@ -8,7 +8,7 @@
 </head>
 <body>
 	<header >
-	    <h1>Лабораторная работа №4</h1>
+	    <h1>Лабораторная работа</h1>
 	</header>
 <?php
 function ucfirst_utf8($str)

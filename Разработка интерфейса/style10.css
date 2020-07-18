@@ -1,0 +1,36 @@
+body {
+  font-family: sans-serif;
+}
+aside {
+background: #f0f0f0;
+padding: 10px;
+width: 200px;
+float: right;
+}
+article {
+margin-right: 240px;
+display: block;
+}
+nav {
+	background-color: #c0b8d6;
+	color: white;
+	height: 100px;
+}
+a{
+	color:black;
+}
+.container {
+	background-color: #d2d0d9;
+	height: 350px;
+}
+.footer {
+	background-color: #c0b8d6;
+	height: 50px;
+}
+.logo {
+	border-radius: 50px;
+}
+header {
+	background-color: #c0b8d6;
+	height: 50px;
+}

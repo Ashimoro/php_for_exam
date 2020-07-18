@@ -8,7 +8,7 @@
 <body>
 <form action="<?php echo $PHP_SELF ?>" method="GET">
 	<header >
-	    <h1>Лабораторная работа №8</h1>
+	    <h1>Лабораторная работа</h1>
 	</header>
 <fieldset>
 <?php

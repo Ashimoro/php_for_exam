@@ -11,15 +11,18 @@
 <body>
 <form action="<?php echo $PHP_SELF ?>" method="GET">
 	<header >
-	    <h1>Лабораторная работа №6</h1>
+	    <h1>Лабораторная работа</h1>
 	</header>
 	<fieldset>
 	<input type="date" name="date" size="6" value="<?php echo $date ?>">
 	<input type="submit" name="ok" value="OK">
 	<?php
+	ini_set('display_errors','On');
+	error_reporting('E_ALL');
 	global $date_post,$date_now,$result;
 	echo "<br>Сегодня: ".$date_now = date("Y/m/d");
 	echo "<br>Товар поступит: ".$date_post = $_GET['date'];
+	ini_set('display_errors','Off');
     function GetTime($date1 , $date2){
 	    $datetime1 = new DateTime($date1);
 	    $datetime2 = new DateTime($date2);
